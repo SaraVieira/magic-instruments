@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Magic Piano - Play piano with the world</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Play piano with the world<">
+  <meta name="image" content="https://magic-piano-img.now.sh/">
+  <meta itemprop="name" content="Piano Keyboard">
+  <meta itemprop="description" content="To play piano using CSS and JavaScript">
+  <meta itemprop="image" content="https://magic-piano-img.now.sh/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Piano Keyboard">
+  <meta name="twitter:description" content="To play piano using CSS and JavaScript">
+  <meta name="twitter:site" content="@NikkitaFTW">
+  <meta name="twitter:creator" content="@NikkitaFTW">
+  <meta name="twitter:image:src" content="https://magic-piano-img.now.sh/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <link rel="shortcut icon" type="image/favicon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <style>
+    body {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="header">
+    <h1 class="title">Play the piano with the world 🌎</h1>
+    <div class="channel row">
+      <p>
+      <span class="channel text">Pick a room: </span><br />
+      <button class="channel button active" data-room="main">Main Room</button>
+      <button class="channel button" data-room="classical">Classical</button>
+      <button class="channel button" data-room="pop">Pop</button>
+      <button class="channel button" data-room="jazz">Jazz</button>
+      <button class="channel button" data-room="ambient">Ambient</button>
+      <button class="channel button" data-room="improv">Improv</button>
+      <input type="text" id="customRoom" class="channel button input" placeholder="Custom"><br />
+      <span class="channel text small">For a private jam session, type a unique name in the "Custom" box and hit "Enter" for it to take affect.<br /> Your friends will need to use this same room name.</span>
+      </p>
+    </div>
+    <div class="piano">
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="20" data-note="1C"></div>
+        <div class="piano-key__black" data-key="81" data-note="1Cs"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="65" data-note="1D"></div>
+        <div class="piano-key__black" data-key="87" data-note="1Ds"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="83" data-note="1E"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="68" data-note="1F"></div>
+        <div class="piano-key__black" data-key="82" data-note="1Fs"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="70" data-note="1G"></div>
+        <div class="piano-key__black" data-key="84" data-note="1Gs"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="71" data-note="2A"></div>
+        <div class="piano-key__black" data-key="89" data-note="2As"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="72" data-note="2B"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="74" data-note="2C"></div>
+        <div class="piano-key__black" data-key="73" data-note="2Cs"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="75" data-note="2D"></div>
+        <div class="piano-key__black" data-key="79" data-note="2Ds"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="76" data-note="2E"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="186" data-note="2F"></div>
+        <div class="piano-key__black" data-key="219" data-note="2Fs"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="222" data-note="2G"></div>
+        <div class="piano-key__black" data-key="221" data-note="2Gs"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="220" data-note="3A"></div>
+        <div class="piano-key__black" data-key="13" data-note="3As"></div>
+      </div>
+      <div class="piano-key">
+        <div class="piano-key__white" data-key="37" data-note="3B"></div>
+      </div>
+    </div>
+  </section>
+  <div class="users">There <span id="users"></span> playing the piano right now, and <span id="roomusers"></span> in this room.</div>
+  <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Play%20Piano%20with%20the%20world&amp;url=https%3A%2F%2Fmagicpiano.now.sh%2F" target="_blank" aria-label="Share on Twitter">
+    <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large">
+      <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" /></svg>
+      </div>Share on Twitter
+    </div>
+  </a>
+</body>
+
+</html>
