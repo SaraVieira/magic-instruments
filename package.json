@@ -1,0 +1,15 @@
+{
+  "name": "magic-instruments",
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "name": "SaraVieira",
+    "url": "https://iamsaravieira.com"
+  },
+  "homepage": "https://github.com/SaraVieira/magic-instruments",
+  "repository": "SaraVieira/magic-instruments",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
+  }
+}

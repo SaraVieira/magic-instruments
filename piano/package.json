@@ -7,6 +7,13 @@
     "> 1%",
     "last 2 versions"
   ],
+  "now": {
+    "alias": "magicpiano",
+    "files": [
+      "server.js",
+      "dist"
+    ]
+  },
   "author": {
     "name": "Sara Vieira",
     "email": "hey@iamsaravieira.com"

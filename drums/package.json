@@ -11,9 +11,17 @@
     "name": "Sara Vieira",
     "email": "hey@iamsaravieira.com"
   },
+  "now": {
+    "alias": "magicdrums",
+    "files": [
+      "server.js",
+      "dist"
+    ]
+  },
   "scripts": {
     "start": "run-p serve watch",
     "now-start": "node server.js",
+    "now-build": "echo $0",
     "build": "NODE_ENV=production webpack -p",
     "watch": "NODE_ENV=development webpack -w",
     "serve": "nodemon server.js",
