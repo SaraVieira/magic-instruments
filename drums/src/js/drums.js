@@ -13,6 +13,8 @@ socket.on('connect', () => {
 
 socket.on('played', key => {
   notes[key].play()
+  tweens[key].restart()
+  tweens[key].play()
 })
 
 socket.on('users', count => {
