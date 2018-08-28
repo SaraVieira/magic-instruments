@@ -70,9 +70,14 @@
 //   display: none;
 // }
 
+.space-img {
+  transform: translateX(47.5%) translateY(90%);
+}
+
 .key-wrap {
   fill: #f3f8fc;
   user-select: none;
+  position: relative;
 }
 
 .key-text {
